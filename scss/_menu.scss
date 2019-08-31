@@ -114,13 +114,33 @@
     &.show {
       transform: translate3d(0, 0, 0);
     }
+
+    &.current > a {
+      color: $secondary-color;
+    }
+  }
+
+  .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    @include easeout;
+
+    &:hover {
+      color: $secondary-color;
+    }
   }
 }
 
 // Delay each nav item slide by 0.1s
 // note: SASS for loop
 @for $x from 1 through 4 {
-  //note # need to for x value as template literal
+  //note # needed for x value as template literal
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
   }
