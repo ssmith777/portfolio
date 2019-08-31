@@ -120,6 +120,7 @@
 // Delay each nav item slide by 0.1s
 // note: SASS for loop
 @for $x from 1 through 4 {
+  //note # need to for x value as template literal
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
   }
