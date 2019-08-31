@@ -4,15 +4,21 @@
   "description": "responsive portfolio site",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "MIT"
+    "url": "https://ssmith777.github.io/portfolio"
   },
   "author": "Shawn T Smith",
   "license": "MIT",
+  "bugs": {
+    "url": "https://ssmith777.github.io/portfolio/issues"
+  },
+  "homepage": "https://ssmith777.github.io/portfolio/",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0"
   }
 }
