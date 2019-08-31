@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://ssmith777.github.io/portfolio"
+    "url": "https://github.com/ssmith777/portfolio"
   },
   "author": "Shawn T Smith",
   "license": "MIT",
   "bugs": {
-    "url": "https://ssmith777.github.io/portfolio/issues"
+    "url": "https://github.com/ssmith777/portfolio/issues"
   },
   "homepage": "https://ssmith777.github.io/portfolio/",
   "dependencies": {
