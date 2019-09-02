@@ -1,6 +1,5 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
 
 * {
   box-sizing: border-box;
@@ -46,7 +45,8 @@ header {
 }
 main {
   padding: 4rem;
-  height: 100%;
+  // added to apply a sticky footer
+  min-height: calc(100vh - 60px);
 
   .icons {
     margin-top: 1rem;
@@ -100,7 +100,7 @@ main {
     grid-area: job3;
   }
 
-  //each job has this class
+  //each job has this class in name (example:job job1)
   .job {
     background: lighten($primary-color, 5);
     padding: 0, 5rem;
@@ -115,3 +115,7 @@ main {
   color: set-text-color($primary-color);
   height: 60px;
 }
+
+// moved to bottom to allow other css to render first
+// before moible media query
+@import 'mobile';
